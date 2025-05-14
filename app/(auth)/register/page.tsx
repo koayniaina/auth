@@ -5,11 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {  useForm } from "react-hook-form";
 import { z } from "zod";
 
-const formSchema = z.object({
-  name: z.string().min(2).max(50),
-  email: z.string().min(2).max(50),
-  password: z.string().min(2).max(50),
-});
 
 import styles from "@/styles/Auth.module.css";
 import {
@@ -32,6 +27,7 @@ import {
 } from "@/components/ui/form"
 // import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button";
+import { formSchema } from "@/lib/auth-schema";
 
 export default function Register() {
   const form = useForm<z.infer<typeof formSchema>>({
