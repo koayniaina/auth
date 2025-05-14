@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 2rem;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.87);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.loginPage{
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: .3rem 1rem;
+    color: whitesmoke;
+    border-radius: 3px;
+}
